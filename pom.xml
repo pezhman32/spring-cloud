@@ -8,6 +8,7 @@
 	<modules>
 		<module>server</module>
 		<module>client</module>
+		<module>dependencies</module>
 	</modules>
 	<packaging>pom</packaging>
 
@@ -28,6 +29,10 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>
 	</dependencies>
 
 	<dependencyManagement>

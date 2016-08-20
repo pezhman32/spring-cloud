@@ -20,7 +20,10 @@ public class ConfigReaderController {
 	 * Or you can use
 	 */
 	@Value("${info.description}")
-	String infoDescription;
+	String infoDescription = "sample";
+
+	@Value("${foo}")
+	String barFoo;
 
 	/**
 	 * Reads data from https://github.com/spring-cloud-samples/config-repo/blob/master/application.yml
@@ -31,6 +34,6 @@ public class ConfigReaderController {
 
 	@RequestMapping("/info/descriptionAndUrl")
 	public String home() {
-		return "Description : " + infoDescription + "\n<br />\nUrl : " + infoUrl;
+		return "Description : " + infoDescription + "\n<br />\nUrl : " + infoUrl + "\n<br />\nBarFoo : " + barFoo;
 	}
 }

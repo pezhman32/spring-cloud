@@ -19,6 +19,7 @@ spring:
   cloud:
     config:
       server:
+        prefix: /server # change server prefix so we can handle our own endpoints as well without conflicts
         git:
           uri: https://github.com/pezhman32/spring-cloud-config-repo.git
           basedir: target/config
