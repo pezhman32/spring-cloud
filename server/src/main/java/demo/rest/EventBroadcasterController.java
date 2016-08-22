@@ -1,6 +1,6 @@
 package demo.rest;
 
-import com.brogrammer.spring.cloud.events.CloudRemoteEvent;
+import org.springframework.cloud.bus.event.CloudRemoteEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.context.annotation.Configuration;
@@ -33,8 +33,8 @@ public class EventBroadcasterController  implements ApplicationEventPublisherAwa
 		Map<String, String> values = new HashMap<String, String>() {{
 			put("message", text);
 		}};
-//		eventPublisher.publishEvent(new CloudRemoteEvent(this, "server.demo.rest.EventBroadcasterController", null, values)); ;
-		eventPublisher.publishEvent(new CloudRemoteEvent(this, "configserver:8888", "client1:8080", values)); ;
+
+		eventPublisher.publishEvent(new CloudRemoteEvent(this, "configserver:8888", "client1"/*null*/, values));
 
 		return "message sent.";
 	}
