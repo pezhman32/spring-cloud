@@ -6,9 +6,10 @@
 	<artifactId>cloud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
+		<module>dependencies</module>
 		<module>server</module>
 		<module>client</module>
-		<module>dependencies</module>
+		<module>client-task</module>
 	</modules>
 	<packaging>pom</packaging>
 
