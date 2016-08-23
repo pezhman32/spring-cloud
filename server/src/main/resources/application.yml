@@ -16,6 +16,9 @@ eureka:
     healthCheckUrlPath: /admin/health
 
 spring:
+  datasource:
+    username: clients
+    password: '{cipher}AQAai7rHPQZ1/4/JEMWSopials5/T6Hkvdtt+258AF6MbpqjpTl6S2McnogO/PAYx8vMpNpwYzFFps37Z+/SrikS19bVEyI+dRiRtKNftgl6k/HtZPWUHLTaEeXEq0IRUJEXNaZLvFBGpEczfrrVLNel4Rrna9CZ4KeGBkauMbtIGhRfy1U+5DOvd0Ahq4YBqRq3xdRaTZ0Ks3WUoqkQYbZmaO98DpzzMhd2Z6vopUmm/XQ/mU8v9xWvZYB6JepFEWsJg8rtCp5UXoyKAqc8rzfS9Zv7E5yqfgq+EcqzYy23ppCQrPiGqurQp/2DsS/a4OrpX+uHnQaWiBAGf1xmIn6qLz0JLPCfqeQ3gu/T2Oi5n6NARuqV2pmgvGPACSxCEc0='
   cloud:
     config:
       server:
