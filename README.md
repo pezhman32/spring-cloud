@@ -1,5 +1,5 @@
 # spring-cloud
-Multi-Tier spring cloud project containing server and client modules connected by AMPQ
+Multi-Tier spring cloud project containing server and client modules connected by AMQP
 
 NOTE: This project requires rabbitmq running on localhost. 
 RabbitMQ installation page: https://www.rabbitmq.com/install-rpm.html
